@@ -4,14 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
-public class secondaact extends AppCompatActivity {
+public class secondary extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_secondaact);
+        setContentView(R.layout.activity_secondary);
+        TextView text = (TextView) findViewById(R.id.textView);
         Intent i = getIntent();
-        String valoreRic = i.getStringExtra("etichetta");
+        String value = i.getStringExtra("name");
+        text.setText(value);
     }
 }

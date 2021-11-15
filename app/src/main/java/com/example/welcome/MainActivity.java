@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public abstract class MainActivity extends AppCompatActivity {
     Button reset;
     Button test;
     Button play;
@@ -35,8 +35,9 @@ public class MainActivity extends AppCompatActivity {
         t.show();
     }
 
-    public void playSeconda (View v){}
-    Intent i = new Intent(getApplicationContext(),secondaact.class);
-    i.putExtra("etichetta", nome.getText());
-    startActivity(i);
+    public void playSecondary(View v) {
+        Intent i = new Intent(getApplicationContext(), secondary.class);
+        i.putExtra("name", nome.getText());
+        startActivity(i);
+    }
 }

@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Welcome">
         <activity
-            android:name=".secondaact"
+            android:name=".secondary"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
